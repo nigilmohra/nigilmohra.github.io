@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigil</title>
+    
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --text-main: #1c1c1c;
+            --text-muted: #555;
+            --accent: #2563eb;
+            --bg: #ffffff;
+
+            /* Spacing scale */
+            --space-xs: 8px;
+            --space-sm: 14px;
+            --space-md: 24px;
+            --space-lg: 40px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-main);
+            line-height: 1.55;
+            padding: var(--space-lg) 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: var(--space-lg);
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: var(--space-xs);
+        }
+
+        header p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Sections */
+        section {
+            margin-top: var(--space-lg);
+        }
+
+        section h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: var(--space-md);
+            color: var(--text-muted);
+        }
+
+        section h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin: var(--space-md) 0 var(--space-sm);
+        }
+
+        /* Two-column timeline */
+        .timeline {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            row-gap: var(--space-sm);
+        }
+
+        .time {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-align: right;
+            padding-right: var(--space-sm);
+            white-space: nowrap;
+        }
+
+        .entry {
+            font-size: 0.9rem;
+        }
+
+        .entry span {
+            display: block;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-md);
+            border-top: 1px solid #eee;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .links a {
+            margin-right: var(--space-sm);
+        }
+
+        @media (max-width: 600px) {
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+
+            .time {
+                text-align: left;
+                padding-right: 0;
+                font-weight: 500;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Nigil Mohanambal Rajasekar</h1>
+    <p>Hello.</p>
+</header>
+
+<section>
+    <h2>Experience</h2>
+
+    <div class="timeline">
+        <div class="time">Dec 2023 – Present</div>
+        <div class="entry">
+            Research Assistant
+            <span>Indian Institute of Science, Bangalore</span>
+        </div>
+
+        <div class="time">Aug 2023 – Dec 2023</div>
+        <div class="entry">
+            Research Intern
+            <span>Indian Institute of Technology, Delhi</span>
+        </div>
+
+        <div class="time">Jan 2023 – Jun 2023</div>
+        <div class="entry">
+            Graduate Intern
+            <span>Mavenir Systems, Bangalore</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Publications</h2>
+
+    <h3>Conference Publications</h3>
+
+    <div class="timeline">
+        <div class="time">2025</div>
+        <div class="entry">
+            Design of Efficient and Configurable Accelerators for Cryptography with Montgomery Safe Curves
+            <a href="https://icedge.org/list-of-accepted-papers/" target="_blank">↗</a>
+            <span>IEEE ICEdge</span>
+        </div>
+
+        <div class="time">2024</div>
+        <div class="entry">
+            Low Footprint Meander Monopole Patch as EMI Sensors
+            <a href="https://doi.org/10.1109/APSCON60364.2024.10466018" target="_blank">↗</a>
+            <span>IEEE APSCON</span>
+        </div>
+
+        <div class="time">2023</div>
+        <div class="entry">
+            Microwave NDT for Estimating Organic Textile Dye Residue on Top Soil
+            <a href="https://doi.org/10.1109/InGARSS59135.2023.10490319" target="_blank">↗</svg></a>
+            <span>IEEE InGARSS</span>
+        </div>
+    </div>
+
+    <h3>Book Chapters</h3>
+
+    <div class="timeline">
+        <div class="time">2023</div>
+        <div class="entry">
+            Metamaterial-Based Antenna and Absorbers in THz Range
+            <a href="https://doi.org/10.1002/9781394167074.ch1" target="_blank">↗</svg></a>
+            <span>Wiley Publications</span>
+        </div>
+
+        <div class="time">2022</div>
+        <div class="entry">
+            Nanoclay-based Polymer Nanocomposites for EMI Shielding
+            <a href="https://doi.org/10.21741/9781644902035-3" target="_blank">↗</svg></a>
+            <span>Material Research Foundation</span>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="links">
+        <a href="https://www.linkedin.com/in/nigilmr/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/nigilmohra" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=aewNsssAAAAJ" target="_blank">Google Scholar</a>
+        <a href="mailto:nigilconnects@gmail.com">Email</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+    <p>© 2025 Nigil</p>
+</footer>
+
+</div>
+</body>
+</html>
